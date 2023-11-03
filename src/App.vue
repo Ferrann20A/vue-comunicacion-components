@@ -1,14 +1,15 @@
 <template>
-  <SeleccionMultiple/>
+  <MenuComponent/>
+  <router-view></router-view>
 </template>
 
 <script>
-import SeleccionMultiple from './components/SeleccionMultiple.vue';
+import MenuComponent from './components/MenuComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    SeleccionMultiple
+    MenuComponent
   }
 }
 </script>
