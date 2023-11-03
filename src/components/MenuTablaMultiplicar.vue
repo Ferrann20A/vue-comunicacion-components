@@ -18,9 +18,10 @@ export default {
       numeros: [],
     };
   },
-  created() {
+  mounted() {
+    // let numAleaotorio = Math.floor(Math.random() * 5) + 1;
     // Genera 3 números aleatorios para los enlaces
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 5; i++) {
       this.numeros.push(Math.floor(Math.random() * 100) + 1);
     }
   },

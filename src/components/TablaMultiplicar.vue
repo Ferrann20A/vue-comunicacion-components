@@ -1,16 +1,11 @@
 <template>
   <div>
     <h1>Tabla de Multiplicar del número {{ numero }}</h1>
-    <table>
-      <!-- Genera la tabla de multiplicar aquí -->
-      <tr v-for="i in 10" :key="i">
-        <td>{{ i }}</td>
-        <td>x</td>
-        <td>{{ numero }}</td>
-        <td>=</td>
-        <td>{{ i * numero }}</td>
-      </tr>
-    </table>
+    <ul>
+        <li v-for="i in 10" :key=i>
+            {{numero}} x {{i}} = {{numero * i}}
+        </li>
+    </ul>
   </div>
 </template>
 
