@@ -1,6 +1,8 @@
 import {createRouter, createWebHistory} from 'vue-router';
 import CheckboxSuma from './components/CheckboxSuma.vue';
 import HomeComponent from './components/HomeComponent.vue'
+import NumeroDoble from './components/NumerDoble.vue';
+import TablaMultiplicar from './components/TablaMultiplicar.vue'
 
 const myRoutes = [
     {
@@ -8,6 +10,12 @@ const myRoutes = [
     },
     {
         path:"/checkbox",component:CheckboxSuma
+    },
+    {
+        path:"/numerodoble/:numero?", component:NumeroDoble
+    },
+    {
+        path:"/tabla/:numero?", component:TablaMultiplicar
     }
 ]
 
