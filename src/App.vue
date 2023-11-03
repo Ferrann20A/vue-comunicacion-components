@@ -1,14 +1,14 @@
 <template>
-  <PadreNumeros/>
+  <SeleccionMultiple/>
 </template>
 
 <script>
-import PadreNumeros from './components/PadreNumeros.vue'
+import SeleccionMultiple from './components/SeleccionMultiple.vue';
 
 export default {
   name: 'App',
   components: {
-    PadreNumeros
+    SeleccionMultiple
   }
 }
 </script>
