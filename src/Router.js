@@ -15,7 +15,7 @@ const myRoutes = [
         path:"/numerodoble/:numero?", component:NumeroDoble
     },
     {
-        path:"/tabla/:numero?", component:TablaMultiplicar
+        path:"/tabla/:numero", component:TablaMultiplicar
     }
 ]
 
