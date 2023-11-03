@@ -4,17 +4,27 @@
             <li>
                 <router-link to="/">Home</router-link>
             </li>
-            <li>
-                <router-link to="/tabla">Tabla Multiplicar</router-link>
+            <li v-for="numero in numeros" :key="numero">
+                <router-link :to="'/tabla/' + numero">Tabla {{ numero }}</router-link>
             </li>
         </ul>
     </div>
 </template>
 
 <script>
-    export default{
-        name:"MenuComponent"
+export default {
+  data() {
+    return {
+      numeros: [],
+    };
+  },
+  created() {
+    // Genera 3 números aleatorios para los enlaces
+    for (let i = 0; i < 3; i++) {
+      this.numeros.push(Math.floor(Math.random() * 100) + 1);
     }
+  },
+};
 </script>
 
 <style>
